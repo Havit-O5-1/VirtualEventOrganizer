@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero-section text-center text-white d-flex align-items-center" style="background-image: url('{{ url_for('static', filename='images/hero-bg.jpg') }}');">
+    <div class="container">
+        <h1 class="display-4">Welcome to Your Interactive Calendar</h1>
+        <p class="lead">Plan. Organize. Succeed.</p>
+        <a href="/calendar" class="btn btn-primary btn-lg">Go to Calendar</a>
+    </div>
+</section>
+
+<section class="features py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>Easy to Use</h3>
+                <p>Intuitive and user-friendly interface for seamless planning.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Customizable</h3>
+                <p>Tailor your calendar to fit your schedule and preferences.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Secure</h3>
+                <p>Your data is protected with top-notch security measures.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
